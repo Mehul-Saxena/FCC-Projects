@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form FCC</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <div id="form-name">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div id="form-email">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your Email" required>
+      </div>
+      <div id="form-number">
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" min="10" max="99" placeholder="Age" required>
+      </div>
+      <div id="form-dropdown">
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full time job">Full Time Job</option>
+          <option value="full time learner">Full Time Learner</option>
+          <option value="prefer not to say">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div id="form-rate">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input id="rate-definitely" type="radio" name="rate-us" value="definitely">
+        <label for="rate-definitely">Definitely</label>
+        <br>
+        <input id="rate-maybe" type="radio" name="rate-us" value="maybe">
+        <label for="rate-maybe">Maybe</label>
+        <br>
+        <input id="rate-not-sure" type="radio" name="rate-us" value="not sure">
+        <label for="rate-not-sure">Not sure</label>
+      </div>
+      <div id="form-improvement">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input id="improvement-front-end-projects" type="checkbox" name="improvement" value="front-end projects">
+        <label for="improvement-front-end-projects">Front-End Projects</label>
+        <br>
+        <input id="improvement-back-end-projects" type="checkbox" name="improvement" value="back-end projects">
+        <label for="improvement-back-end-projects">Back-End Projects</label>
+        <br>
+        <input id="improvement-data-visualization" type="checkbox" name="improvement" value="data visualization">
+        <label for="improvement-data-visualization">Data Visualization</label>
+        <br>
+        <input id="improvement-challenges" type="checkbox" name="improvement" value="challenges">
+        <label for="improvement-challenges">Challenges</label>
+        <br>
+        <input id="improvement-open-source-community" type="checkbox" name="improvement" value="open source community">
+        <label for="improvement-open-source-community">Open Source Community</label>
+        <br>
+        <input id="improvement-gitter-help-rooms" type="checkbox" name="improvement" value="gitter help rooms">
+        <label for="improvement-gitter-help-rooms">Gitter Help Rooms</label>
+        <br>
+        <input id="improvement-videos" type="checkbox" name="improvement" value="videos">
+        <label for="improvement-videos">Videos</label>
+        <br>
+        <input id="improvement-city-meetups" type="checkbox" name="improvement" value="city meetups">
+        <label for="improvement-city-meetups">City Meetups</label>
+        <br>
+        <input id="improvement-wiki" type="checkbox" name="improvement" value="wiki">
+        <label for="improvement-wiki">Wiki</label>
+        <br>
+        <input id="improvement-forum" type="checkbox" name="improvement" value="forum">
+        <label for="improvement-forum">Forum</label>
+        <br>
+        <input id="improvement-additional-courses" type="checkbox" name="improvement" value="additional courses">
+        <label for="improvement-additional-courses">Additional Courses</label>
+        <br>
+      </div>
+      <div id="form-textarea">
+        <label for="textarea">Any comments or suggestions</label>
+        <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>

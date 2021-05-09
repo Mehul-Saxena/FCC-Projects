@@ -1,0 +1,59 @@
+#main {
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  border-radius: 10px;;
+  background-color: #EEE;
+  font-family: 'Segore UI', Helvetica, Arial, sans-serif;
+}
+
+#title {
+  text-align: center;
+  padding: 10px;
+}
+
+#short-description {
+  text-align: center;
+  padding: 10px;
+}
+
+#img-div {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+}
+
+#img-caption {
+  text-align: center;
+  padding: 5px;
+}
+
+#tribute-info-title {
+  text-align: center;
+  padding: 10px;
+}
+
+#tribute-info-list > li {
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+#tribute-info-quote {
+  width: 75%;
+  margin: auto;
+  font-style: italic;
+  padding: 10px;
+}
+
+#tribute-info-wiki-link {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
