@@ -4,12 +4,14 @@ body {
   left: 0;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
   box-sizing: border-box;
   font-family: 'Open Sans', Arial, sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .main-section {
+  font-size: 0.9em;
   margin: 0.8em;
   padding: 0.8em;
 }
@@ -23,7 +25,6 @@ body {
   background-color: #EEE;
   border-radius: 0.25em;
   padding: 1.5em;
-  height: auto;
 }
 
 .desc-div {
@@ -32,4 +33,121 @@ body {
 
 li {
   margin: 0.5em;
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  background-color: #DDD;
+  border-right: 2px #999 solid;
+}
+
+#navbar .header {
+  padding: 0.5em;
+  border-bottom: 2px #999 solid;
+}
+
+#navbar li {
+  margin: 0;
+  padding: 0.5em;
+}
+
+#nav-link-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1em;
+}
+
+#expand-nav-icon {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #DDD;
+  border-right: 2px #999 solid;
+  border-radius: 50%;
+}
+
+#collapse-nav-icon {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #DDD;
+  border-right: 2px #999 solid;
+  border-radius: 50%;
+}
+
+.collapsed-nav {
+  font-size: 0;
+  width: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.expanded-nav {
+  font-size: 0.9em;
+  width: 300px;
+  padding: 0.8em;
+  box-sizing: border-box;
+}
+
+.expanded-content {
+  margin-left: 5px;
+}
+
+.collapsed-content {
+  margin-left: 300px;
+}
+
+.passive-btn {
+  left: -9999px;
+}
+
+.active-collapse-btn {
+  left: 280px;
+}
+
+.active-expand-btn {
+  left: -15px;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-flow: column nowrap;
+  }
+  
+  #navbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    border-right: none;
+    border-bottom: 2px #999 solid;;
+    background-color: #DDD;
+  }
+
+  #navbar .header {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 2px #999 solid;
+  }
+
+  .main-section {
+    margin-left: 0;
+  }
 }

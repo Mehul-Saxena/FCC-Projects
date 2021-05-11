@@ -6,10 +6,32 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+    <nav id="navbar" class="expanded-nav">
+      <header class="header">JS Documentation</header>
+      <ul id="nav-link-list">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+        <li><a class="nav-link" href="#while_statement">while statement</a></li>
+        <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+      <span id="expand-nav-icon" class="material-icons passive-btn">&#xe315;</span>
+      <span id="collapse-nav-icon" class="material-icons active-collapse-btn">&#xe314;</span>
+    </nav>
     <main id="main-doc">
-      <section class="main-section" id="Introduction">
+      <section class="main-section collapsed-content" id="Introduction">
         <header class="header">Introduction</header>
         <div class="desc-div">
           <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
@@ -20,7 +42,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section" id="What_you_should_already_know">
+      <section class="main-section collapsed-content" id="What_you_should_already_know">
         <header class="header">What you should already know</header>
         <div class="desc-div">
           <p>This guide assumes you have the following basic background:</p>
@@ -31,7 +53,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-section" id="JavaScript_and_Java">
+      <section class="main-section collapsed-content" id="JavaScript_and_Java">
         <header class="header">JavaScript and Java</header>
         <div class="desc-div">
           <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
@@ -39,7 +61,7 @@
           <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
         </div>
       </section>
-      <section class="main-section" id="Hello_world">
+      <section class="main-section collapsed-content" id="Hello_world">
         <header class="header">Hello world</header>
         <div class="desc-div">
           <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
@@ -50,7 +72,7 @@
           <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
         </div>
       </section>
-      <section class="main-section" id="Variables">
+      <section class="main-section collapsed-content" id="Variables">
         <header class="header">Variables</header>
         <div class="desc-div">
           <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
@@ -58,7 +80,7 @@
           <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
         </div>
       </section>
-      <section class="main-section" id="Declaring_variables">
+      <section class="main-section collapsed-content" id="Declaring_variables">
         <header class="header">Declaring variables</header>
         <div class="desc-div">
           <p>You can declare a variable in three ways:</p>
@@ -79,7 +101,7 @@
           <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </div>
       </section>
-      <section class="main-section" id="Variable_scope">
+      <section class="main-section collapsed-content" id="Variable_scope">
         <header class="header">Variable scope</header>
         <div class="desc-div">
           <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
@@ -95,14 +117,14 @@
        --></code></pre>
         </div>
       </section>
-      <section class="main-section" id="Global_variables">
+      <section class="main-section collapsed-content" id="Global_variables">
         <header class="header">Global variables</header>
         <div class="desc-div">
           <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
           <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
         </div>
       </section>
-      <section class="main-section" id="Constants">
+      <section class="main-section collapsed-content" id="Constants">
         <header class="header">Constants</header>
         <div class="desc-div">
           <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
@@ -129,7 +151,7 @@
        --></code></pre>
         </div>
       </section>
-      <section class="main-section" id="Data_types">
+      <section class="main-section collapsed-content" id="Data_types">
         <header class="header">Data types</header>
           <div class="desc-div">
           <p>The latest ECMAScript standard defines seven data types:</p>
@@ -149,7 +171,7 @@
           <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
         </div>
       </section>
-      <section class="main-section" id="if...else_statement">
+      <section class="main-section collapsed-content" id="if...else_statement">
         <header class="header">if...else statement</header>
         <div class="desc-div">
           <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
@@ -185,7 +207,7 @@
        --></code></pre>
         </div>
       </section>
-      <section class="main-section" id="while_statement">
+      <section class="main-section collapsed-content" id="while_statement">
         <header class="header">while statement</header>
         <div class="desc-div">
           <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
@@ -214,7 +236,7 @@
           <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
         </div>
       </section>
-      <section class="main-section" id="Function_declarations">
+      <section class="main-section collapsed-content" id="Function_declarations">
         <header class="header">Function declarations</header>
         <div class="desc-div">
           <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
@@ -234,7 +256,7 @@
           <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
         </div>
       </section>
-      <section class="main-section" id="Reference">
+      <section class="main-section collapsed-content" id="Reference">
         <header class="header">Reference</header>
         <div class="desc-div">
           <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>.</p>
