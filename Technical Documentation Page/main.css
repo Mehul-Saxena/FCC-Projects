@@ -133,6 +133,9 @@ li {
   #navbar {
     position: relative;
     height: 200px;
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.8em;
     overflow: auto;
     border-right: none;
     border-bottom: 2px #999 solid;;
@@ -149,5 +152,9 @@ li {
 
   .main-section {
     margin-left: 0;
+  }
+
+  #collapse-nav-icon, #expand-nav-icon {
+    left: -9999px;
   }
 }
