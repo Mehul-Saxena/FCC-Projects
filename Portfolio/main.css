@@ -24,6 +24,7 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 #navbar h1 {
@@ -85,18 +86,123 @@ a {
   width: max-content;
   margin: 0 auto;
   padding: 1em 1em 0.5em 1em;
-  border-bottom: 3px solid #F0F0F0;
+  border-bottom: 2px solid #F0F0F0;
 }
 
 #project-grid {
+  max-width: 1280px;
+  width: 100%;
+  margin: 2.5em auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1.5em;
+}
+
+.project-tile {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#project-calculator {
+  background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Calculator.png?raw=true);
+}
+
+#project-documentation {
+    background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Documentation_page.png?raw=true);
+}
+
+#project-product {
+    background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Product_page.png?raw=true);
+}
+
+#project-sketch {
+    background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Sketch.png?raw=true);
+}
+
+#project-survey {
+    background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Survey_form.png?raw=true);
+}
+
+#project-tribute {
+    background-image: url(https://github.com/Mehul-Saxena/FCC-Projects/blob/main/Portfolio/Images/Tribute.png?raw=true);
+}
+
+.project-tile-title {
+  margin: 0;
+  padding: 1.25em;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #303841;
+}
+
+.project-tile-title p {
+  margin: 0 0.5em;
+}
+
+.code {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  color: #303841
+}
+
+.project-tile:hover {
+  animation-name: scale;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1.02);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+  }
+}
+
+.project-tile:hover .code{
+  animation-name: code-color;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes code-color {
+  100% {
+    color: #be3144;
+  }
 }
 
 #contact {
   background-color: #303841;
   width: 100%;
   height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#profile-link {
+  border: 2px solid red;
 }
 
 #footer {
