@@ -44,6 +44,17 @@ a {
   padding: 0.25em;
 }
 
+@media (max-width: 550px) {
+  #navbar h1 {
+    position: absolute;
+    left: -9999px;
+  }
+
+  #nav-link-list {
+    justify-content: center;
+  }
+}
+
 #nav-link-list li {
   padding: 0.25em;
   margin: 0 1em;
@@ -73,6 +84,12 @@ a {
   color: #be3144;
   margin: 0;
   padding: 0.2em;
+}
+
+@media (max-width: 650px) {
+  #welcome-section p {
+    text-align: center;
+  }
 }
 
 #projects {
@@ -194,7 +211,21 @@ a {
   align-items: center;
 }
 
+#contact > h1 {
+  margin: 0;
+  padding: 1em;
+  font-size: 3em;
+}
+
+@media (max-width: 600px) {
+  #contact > h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
 #contact-list {
+  width: 35%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -202,10 +233,38 @@ a {
 }
 
 #profile-link {
-  border: 2px solid red;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0.8em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fab {
+  padding: 0 0.5em;
+  font-size: 1.2em;
 }
 
 #footer {
   background-color: #303841;
+  border-top: 4px solid #be3144;
   width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > p {
+  margin: 0;
+  padding: 1.5em;
+}
+
+@media (max-width: 600px) {
+  #footer > p {
+    text-align: center;
+  }
 }
